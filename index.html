@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/c2198bbff5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <div class="player">
+                <img src="./images/disc.png" alt="Record" class="record">
+                <h2 id="title">Song Name</h2>
+                <div class="slidecontainer">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="controls">
+                    <button class="previous" id="previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                    <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            <inline></inline>
+            <div class="playlist">
+                <h2>Your Playlist</h2>
+                <ul class="song-list">
+                    <li data-src="music/Honeypie.mp3" data-name="Honey Pie" data-index="0"><span>Honey
+                            Pie</span><span>02:30</span></li>
+                    <li data-src="music/Mai-Ni-Meriye.mp3" data-name="Mai-Ni-Mariye" data-index="1">
+                        <span>Mai-Ni-Mariye</span><span>02:51</span></li>
+                    <li data-src="music/Stay.mp3" data-name="Stay" data-index="2">
+                        <span>Stay</span><span>02:30</span></li>
+                    <li data-src="music/No lie.mp3" data-name="No lie" data-index="3">
+                        <span>No lie</span><span>04:00</span></li>
+                    <li data-src="music/Woman.mp3" data-name="Woman" data-index="4">
+                        <span>Woman</span><span>02:52</span></li>
+                    <li data-src="music/My Neck My Back.mp3" data-name="My Neck My Back" data-index="5">
+                        <span>My Neck My Back</span><span>03:56</span></li>
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
